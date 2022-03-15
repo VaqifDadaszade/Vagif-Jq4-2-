@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            border: 2px solid aquamarine;
+            margin: 10px;
+        }
+
+        .red{
+            background-color: rgb(112, 14, 14);
+        }
+
+        .orange{
+            background-color: rgb(255, 145, 0);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <button id="btn">Text(Get)</button>
+    <button id="btn2">Html(Get)</button>
+    <button id="btn3">Html(Set)</button>
+    <button id="btn4">Val()</button>
+    <button id="btn5">Append()</button>
+    <button id="btn6">Prepend()</button>
+    <button id="btn7">After()</button>
+    <button id="btn8">Before()</button>
+    <button id="btn9">Remove()</button>
+    <button id="btn10">Empty()</button>
+    <button id="btn11">AddClass()</button>
+    <button id="btn12">RemoveClass()</button>
+    <button id="btn13">ToggleClass()</button>
+    <button id="btn14">Css()</button>
+
+    <p id="pId">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p id="pId2"></p>
+    <p id="pId3">Lorem ipsum dolor sit amet consectetur.</p>
+    <p id="pId4"></p>
+    <p id="pId5"></p>
+
+    <input type="email" name="" id="input">
+
+    <div>Vagif</div>
+    <div>saitama adem</div>
+    <div>Anar Nagiyev</div>
+    <div>Nizami Babayev</div>
+    <div>AlishkaTop1gg</div>
+    <div>Super,Hyper,Ultar,Mega Teacher Asif</div>
+
+    <script>
+
+        $(function () {
+            $("#btn").click(function () {
+                $("p").text("SCSS Adem!");
+            });
+        });
+
+        $(function () {
+            $("#btn2").click(function () {
+                $("p").html("<h1>SCSS Adem!</h1>");
+            });
+        });
+
+        $(function () {
+            $("#btn3").click(function () {
+                let e = $("#pId").html();
+                alert(e);
+            });
+        });
+
+        $(function () {
+            $("#btn4").click(function () {
+                $("input").val("vaqifdadaszade012@gmail.com");
+            });
+        });
+
+        $(function () {
+            $("#btn5").click(function () {
+                $("div").append("Add in Append() Methodu");
+            });
+        });
+
+        $(function () {
+            $("#btn6").click(function () {
+                $("div").prepend("Add in Prepend() Methodu");
+            });
+        });
+
+        $(function () {
+            $("#btn7").click(function () {
+                $("div").after("Add in After() Methodu");
+            });
+        });
+
+        $(function () {
+            $("#btn8").click(function () {
+                $("div").before("Add in Before() Methodu");
+            });
+        });
+
+        $(function () {
+            $("#btn9").click(function () {
+                $("div").remove();
+            });
+        });
+
+        $(function () {
+            $("#btn10").click(function () {
+                $("div").empty();
+            });
+        });
+
+        $(function () {
+            $("#btn11").click(function () {
+                $("div,p").addClass("orange");
+                $("button,input").addClass("red");
+            });
+        });
+
+        
+        $(function () {
+            $("#btn12").click(function () {
+                $("div").removeClass();
+            });
+        });
+        
+        
+        $(function () {
+            $("#btn13").click(function () {
+                $("div,p").toggleClass("orange");
+                $("button,input").toggleClass("red")
+            });
+        });
+
+        $(function () {
+            $("#btn13").click(function () {
+                $("p").css("background-color", "deepskyblue")
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
