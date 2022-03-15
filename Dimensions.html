@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+
+        div{
+            width: 300px;
+            height: 300px;
+            padding: 25px;
+            border: 5px ridge red;
+            margin: 26px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <button id="btn">Width</button>
+    <button id="btn2">Height</button>
+    
+    <div id="div">Vagif</div>
+    <div id="div2">Asif</div>
+
+    <script>
+
+        $(function() {
+            $("#btn").click(function() {
+                $("p").html("width= " + $("#div").width() + "\n" +
+                "innerwidth= " + $("#div").innerWidth() + "\n" +
+                "outerwidth= " + $("#div").outerWidth() + "\n" +
+                "outerwidth-true= " + $("#div").outerWidth(true))
+            })
+        })
+
+        $(function() {
+            $("#btn2").click(function() {
+                $("p").html("height= " + $("#div").height() + "\n" +
+                "innerheight= " + $("#div").innerHeight() + "\n" +
+                "outerheight= " + $("#div").outerHeight() + "\n" +
+                "outerheight-true= " + $("#div").outerHeight(true))
+            })
+        })
+
+    </script>
+
+</body>
+</html>
